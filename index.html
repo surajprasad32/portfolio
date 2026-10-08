@@ -1,719 +1,281 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suraj Prasad Kalauni — ML/AI Engineer</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/jpeg" href="SurajPhoto.jpg" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suraj Prasad Kalauni</title>
+  <meta name="description" content="Suraj Prasad Kalauni — Senior Software Engineer at Samsung R&D Institute India. Work on efficient LLM inference and machine learning for network security.">
+  <meta name="author" content="Suraj Prasad Kalauni">
+  <meta name="keywords" content="Suraj Prasad Kalauni, LLM inference, speculative decoding, quantization, intrusion detection, adversarial machine learning, Samsung SRIB, DTU">
+  <meta property="og:title" content="Suraj Prasad Kalauni">
+  <meta property="og:description" content="Efficient LLM inference · ML for network security · Samsung R&D Institute India">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://surajprasad32.github.io/">
+  <meta property="og:image" content="assets/photo.jpg">
+  <meta name="theme-color" content="#fafaf8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a5f'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23fafaf8' text-anchor='middle'%3ESK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
-
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-       ============================================================ -->
-  <header class="nav" id="nav">
-    <div class="container nav__inner">
-      <a href="#hero" class="nav__logo">Suraj<span>.</span></a>
-
-      <nav aria-label="Main navigation">
-        <ul class="nav__links">
-          <li><a href="#work">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <a href="#contact" class="nav__cta">Hire Me</a>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Mobile nav overlay -->
-  <div class="nav__mobile" id="mobileMenu">
-    <a href="#work" onclick="closeMobileMenu()">Projects</a>
-    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
-    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
-    <a href="#publications" onclick="closeMobileMenu()">Publications</a>
-    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">SPK</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#news">News</a>
+      <a href="assets/Suraj_Prasad_Kalauni_CV.pdf" target="_blank" rel="noopener">CV&nbsp;↗</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">☽</button>
+    </nav>
   </div>
+</header>
 
+<main id="top" class="container">
 
-  <!-- ============================================================
-       HERO
-       ============================================================ -->
-  <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero__eyebrow reveal">
-        <div class="hero__eyebrow-line"></div>
-        <span class="label">ML/AI Engineer | Samsung SRIB | DTU M.Tech</span>
-      </div>
+  <!-- ============ HERO / ABOUT ============ -->
+  <section id="about" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Senior Software Engineer · Samsung R&amp;D Institute India</p>
+      <h1>Suraj Prasad Kalauni</h1>
 
-      <h1 class="h1 hero__title reveal reveal-delay-1">
-        Suraj Prasad Kalauni<br><em>LLM inference</em> engineer.
-      </h1>
-
-      <p class="body-lg hero__desc reveal reveal-delay-2">
-        I build and optimize ML systems, LLM inference pipelines, agentic workflows,
-        and production-grade backend services for applied AI products.
+      <p>
+        I work on making large language models <strong>faster and cheaper to serve</strong>,
+        and on <strong>machine learning for network security</strong>. My inference work spans
+        speculative decoding, low-precision quantization, structured pruning, and KV-cache
+        optimization; my security work studies how intrusion detection models generalize across
+        network domains and how they hold up against adversarial evasion.
+      </p>
+      <p>
+        I recently joined <a href="https://research.samsung.com/sri-b" target="_blank" rel="noopener">Samsung R&amp;D Institute India</a>
+        in Bangalore as a Senior Software Engineer, after a Pre-Placement Offer from my internship there,
+        where I built LLM-powered agentic workflows for developer tooling and cut transformer inference latency by 15%.
+        I completed my M.Tech in Software Engineering at
+        <a href="https://dtu.ac.in/" target="_blank" rel="noopener">Delhi Technological University</a>, with a thesis on
+        ML-based network intrusion detection advised by Prof. Ruchika Malhotra, and my B.Tech in Computer Science at AKTU.
       </p>
 
-      <div class="hero__actions reveal reveal-delay-3">
-        <a href="#work" class="btn-primary">View Projects</a>
-        <a href="Suraj%20Prasad%20Kalauni%20Resume.pdf" class="btn-ghost" download="Suraj Prasad Kalauni Resume.pdf">Download Resume</a>
+      <div class="links">
+        <a class="btn" href="mailto:spkalauni7789@gmail.com">Email</a>
+        <a class="btn" href="https://github.com/surajprasad32" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/surajprasaddtu/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://doi.org/10.1063/5.0247009" target="_blank" rel="noopener">Publication</a>
+        <a class="btn btn-primary" href="assets/Suraj_Prasad_Kalauni_CV.pdf" target="_blank" rel="noopener">CV</a>
       </div>
+      <p class="note">I'm happy to talk about efficient inference, ML security, research collaborations, and grad school.</p>
+    </div>
 
-      <div class="hero__scroll reveal reveal-delay-4">
-        <div class="hero__scroll-line"></div>
-        <span>Scroll to explore</span>
+    <aside class="hero-card">
+      <img src="assets/photo.jpg" alt="Suraj Prasad Kalauni" width="600" height="600">
+      <div class="card-body">
+        <strong>Senior Software Engineer</strong>
+        <span>Samsung R&amp;D Institute India</span>
+        <span class="muted">Bangalore, India</span>
       </div>
+    </aside>
+  </section>
+
+  <!-- ============ AFFILIATIONS ============ -->
+  <section class="affiliations" aria-label="Affiliations">
+    <div class="aff">
+      <span class="aff-logo" style="--c:#1428a0">S</span>
+      <div><strong>Samsung R&amp;D Institute India</strong><span>Senior Software Engineer · 2026–</span></div>
+    </div>
+    <div class="aff">
+      <span class="aff-logo" style="--c:#8b1e1e">DTU</span>
+      <div><strong>Delhi Technological University</strong><span>M.Tech, Software Engineering · 2024–26</span></div>
+    </div>
+    <div class="aff">
+      <span class="aff-logo" style="--c:#1f6b4f">AKTU</span>
+      <div><strong>Dr. A.P.J. Abdul Kalam Technical University</strong><span>B.Tech, CSE · 2020–24</span></div>
     </div>
   </section>
 
-
-  <!-- ============================================================
-       MARQUEE
-       ============================================================ -->
-  <div class="marquee-strip">
-    <div class="marquee-track">
-      <!-- First copy -->
-      <div class="marquee-item">ML Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">AI Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Gen AI Developer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Applied Scientist <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Backend Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Data Scientist <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Software Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Data Analyst <span class="marquee-dot"></span></div>
-      <!-- Duplicate for seamless loop -->
-      <div class="marquee-item">ML Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">AI Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Gen AI Developer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Applied Scientist <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Backend Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Data Scientist <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Software Engineer <span class="marquee-dot"></span></div>
-      <div class="marquee-item">Data Analyst <span class="marquee-dot"></span></div>
-    </div>
-  </div>
-
-
-  <!-- ============================================================
-       WORK / PROJECTS
-       ============================================================ -->
-  <section class="section" id="work">
-    <div class="container">
-
-      <div class="work__header reveal">
-        <div class="work__header-left">
-          <span class="label">Selected Projects</span>
-          <h2 class="h2" style="margin-top:16px">Applied AI, systems, and research work.</h2>
-          <p class="body-lg work__header-desc">
-            Projects across LLM acceleration, quantization, pruning, backend systems,
-            medical AI research, security, and embedded IoT.
-          </p>
-        </div>
-        <a href="https://github.com/your-github-url" class="work__view-all" target="_blank" rel="noopener noreferrer">
-          GitHub
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Filters -->
-      <div class="work__filters reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="llm-ai">LLM/AI</button>
-        <button class="filter-btn" data-filter="backend">Backend</button>
-        <button class="filter-btn" data-filter="full-stack">Full Stack</button>
-        <button class="filter-btn" data-filter="research">Research</button>
-        <button class="filter-btn" data-filter="iot-embedded">IoT/Embedded</button>
-      </div>
-
-      <!-- Projects Grid -->
-      <div class="projects-grid">
-
-        <!-- Project 1 — Featured wide -->
-        <article class="project-card project-card--wide project-card--featured reveal" data-category="llm-ai research">
-          <div class="project-card__media">
-            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #1b4332 0%, #012d1d 50%, #0f2418 100%);">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <rect x="8" y="8" width="22" height="22" rx="3" fill="rgba(165,208,185,0.3)"/>
-                <rect x="34" y="8" width="22" height="22" rx="3" fill="rgba(165,208,185,0.15)"/>
-                <rect x="8" y="34" width="22" height="22" rx="3" fill="rgba(165,208,185,0.15)"/>
-                <rect x="34" y="34" width="22" height="22" rx="3" fill="rgba(165,208,185,0.08)"/>
-              </svg>
-            </div>
-            <div class="project-card__overlay"></div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags">
-              <span class="tag">LLM</span>
-              <span class="tag">Inference</span>
-              <span class="tag">PyTorch</span>
-            </div>
-            <h3 class="project-card__title">Speculative Decoding — LLM Inference Acceleration</h3>
-            <p class="project-card__desc">Implemented speculative decoding from scratch using GPT-2 draft and GPT-2 XL verifier; achieved 2.1x end-to-end throughput speedup and profiled KV-cache memory, batch throughput, and latency.</p>
-            <div class="project-card__footer">
-              <span class="project-card__year">2025</span>
-              <span class="project-card__arrow">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2 — Narrow -->
-        <article class="project-card project-card--narrow reveal reveal-delay-1" data-category="llm-ai research">
-          <div class="project-card__media">
-            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #2a1f3d 0%, #1a1230 100%);">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-                <circle cx="28" cy="28" r="20" stroke="rgba(165,208,185,0.3)" stroke-width="1.5"/>
-                <circle cx="28" cy="28" r="12" stroke="rgba(165,208,185,0.2)" stroke-width="1.5"/>
-                <circle cx="28" cy="28" r="4" fill="rgba(165,208,185,0.4)"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags">
-              <span class="tag">Quantization</span>
-              <span class="tag">ONNX</span>
-              <span class="tag">BitsAndBytes</span>
-            </div>
-            <h3 class="project-card__title">LLM Inference Benchmarking & Quantization Pipeline</h3>
-            <p class="project-card__desc">Built benchmarking for LLaMA 3.2-1B and Mistral-7B, applied INT8 quantization for 38% GPU memory reduction with less than 1.2% perplexity degradation.</p>
-            <div class="project-card__footer">
-              <span class="project-card__year">2025</span>
-              <span class="project-card__arrow">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3 — Half -->
-        <article class="project-card project-card--half reveal" data-category="llm-ai research">
-          <div class="project-card__media">
-            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #1a2a35 0%, #0d1a22 100%);">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-                <rect x="8" y="16" width="40" height="6" rx="3" fill="rgba(165,208,185,0.3)"/>
-                <rect x="8" y="26" width="28" height="4" rx="2" fill="rgba(165,208,185,0.15)"/>
-                <rect x="8" y="34" width="32" height="4" rx="2" fill="rgba(165,208,185,0.1)"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags">
-              <span class="tag">Pruning</span>
-              <span class="tag">DistilBERT</span>
-              <span class="tag">NLP</span>
-            </div>
-            <h3 class="project-card__title">Transformer Pruning & Compression for Efficient Inference</h3>
-            <p class="project-card__desc">Structured attention-head pruning pipeline for DistilBERT at 10%, 20%, and 30% sparsity; reduced inference latency by 27% at 20% sparsity with 0.8% accuracy drop.</p>
-            <div class="project-card__footer">
-              <span class="project-card__year">2024</span>
-              <span class="project-card__arrow">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 4 — Half -->
-        <article class="project-card project-card--half reveal reveal-delay-1" data-category="backend full-stack">
-          <div class="project-card__media">
-            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #2a1a10 0%, #1a0f08 100%);">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-                <rect x="17" y="8" width="22" height="38" rx="4" stroke="rgba(165,208,185,0.3)" stroke-width="1.5"/>
-                <rect x="22" y="14" width="12" height="20" rx="2" fill="rgba(165,208,185,0.15)"/>
-                <circle cx="28" cy="40" r="2" fill="rgba(165,208,185,0.3)"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">React</span>
-              <span class="tag">Redis</span>
-            </div>
-            <h3 class="project-card__title">Scalable Task Management System — MERN Stack</h3>
-            <p class="project-card__desc">Built real-time task updates with WebSockets, JWT-based RBAC, MongoDB persistence, and Redis caching that reduced database load by 40%.</p>
-            <div class="project-card__footer">
-              <span class="project-card__year">2024</span>
-              <span class="project-card__arrow">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 5 — Third -->
-        <article class="project-card project-card--third reveal" data-category="backend">
-          <div class="project-card__media">
-            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #1a2210 0%, #101508 100%);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <path d="M8 36L24 12L40 36H8Z" stroke="rgba(165,208,185,0.3)" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags"><span class="tag">Security</span><span class="tag">NFC</span><span class="tag">RSA</span></div>
-            <h3 class="project-card__title">Secure Payment System with NFC, RSA & FIDO</h3>
-            <p class="project-card__desc">NFC and RSA encryption reduced transaction time by 40%, with FIDO biometric MFA and 100+ field-tested transactions at 99.9% success.</p>
-            <div class="project-card__footer">
-              <span class="project-card__year">2024</span>
-              <span class="project-card__arrow">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 6 — Third -->
-        <article class="project-card project-card--third reveal reveal-delay-1" data-category="research llm-ai">
-          <div class="project-card__media">
-            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #1a1a2a 0%, #0e0e1a 100%);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="8" width="14" height="14" rx="2" fill="rgba(165,208,185,0.25)"/>
-                <rect x="26" y="8" width="14" height="14" rx="2" fill="rgba(165,208,185,0.15)"/>
-                <rect x="8" y="26" width="32" height="14" rx="2" fill="rgba(165,208,185,0.1)"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags"><span class="tag">Medical AI</span><span class="tag">CNN</span></div>
-            <h3 class="project-card__title">Cardiovascular Risk Prediction using Retinal Images</h3>
-            <p class="project-card__desc">Published deep learning approach for cardiovascular risk prediction from retinal fundus images, achieving 79.41% classification accuracy.</p>
-            <div class="project-card__footer">
-              <span class="project-card__year">2025</span>
-              <span class="project-card__arrow">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 7 — Third -->
-        <article class="project-card project-card--third reveal reveal-delay-2" data-category="iot-embedded">
-          <div class="project-card__media">
-            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #1e1a10 0%, #14120a 100%);">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="24" r="14" stroke="rgba(165,208,185,0.25)" stroke-width="1.5" stroke-dasharray="4 3"/>
-                <circle cx="24" cy="24" r="6" fill="rgba(165,208,185,0.2)"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags"><span class="tag">STM32</span><span class="tag">Sensors</span></div>
-            <h3 class="project-card__title">Smart Plant Watering System — STM32 IoT</h3>
-            <p class="project-card__desc">Automated watering with soil moisture sensors, reducing manual effort by 80% and extending battery life by 50% through low-power mode.</p>
-            <div class="project-card__footer">
-              <span class="project-card__year">2024</span>
-              <span class="project-card__arrow">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </div>
-          </div>
-        </article>
-
-      </div><!-- /projects-grid -->
-    </div>
+  <!-- ============ RESEARCH ============ -->
+  <section id="research">
+    <h2>Research</h2>
+    <ul class="research-list">
+      <li>
+        <strong>Efficient LLM inference.</strong>
+        Speculative decoding (draft–verifier pairs, acceptance-rate vs. speedup trade-offs, adaptive draft length),
+        INT8/FP16 post-training quantization, structured attention-head pruning, and KV-cache strategies for
+        serving models under tight memory budgets.
+      </li>
+      <li>
+        <strong>ML for network security.</strong>
+        Intrusion detection models that transfer across network domains through unified flow representations,
+        and the robustness of those detectors against adversarial evasion attacks and the defenses that counter them.
+      </li>
+      <li>
+        <strong>Secure and trustworthy inference systems.</strong>
+        Where the two threads meet: how the optimizations that make inference fast change what a system reveals
+        and how it can be attacked.
+      </li>
+    </ul>
   </section>
 
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications">
+    <h2>Publications</h2>
 
-  <!-- ============================================================
-       ABOUT
-       ============================================================ -->
-  <div class="section-divider"></div>
-
-  <section class="section" id="about">
-    <div class="container">
-      <div class="about__grid">
-
-        <!-- Photo col -->
-        <div class="about__photo-wrap reveal">
-          <div class="about__photo">
-            <img src="SurajPhoto.jpg" alt="Suraj Prasad Kalauni" />
-          </div>
-
-          <div class="about__stats">
-            <div class="about__stat">
-              <div class="about__stat-number">2.1x</div>
-              <div class="about__stat-label">LLM Throughput Speedup</div>
-            </div>
-            <div class="about__stat">
-              <div class="about__stat-number">38%</div>
-              <div class="about__stat-label">GPU Memory Reduction</div>
-            </div>
-            <div class="about__stat">
-              <div class="about__stat-number">99.9%</div>
-              <div class="about__stat-label">Service Uptime</div>
-            </div>
-            <div class="about__stat">
-              <div class="about__stat-number">15+</div>
-              <div class="about__stat-label">Sports Medals</div>
-            </div>
-          </div>
+    <article class="pub">
+      <div class="pub-thumb" style="--c:#1f3a5f"><span>ICDAM</span><small>2026</small></div>
+      <div class="pub-body">
+        <h3>A Cross-Domain Intrusion Detection System Using Unified Network Flow Representations and Deep Models</h3>
+        <p class="authors"><strong>Suraj Prasad Kalauni</strong>, et al.</p>
+        <p class="venue"><em>International Conference on Data Analytics &amp; Management (ICDAM)</em>, 2026</p>
+        <div class="pub-links">
+          <button class="chip abs-toggle" aria-expanded="false">Abstract</button>
+          <span class="badge">Presented · ICDAM 2026</span>
         </div>
-
-        <!-- Content col -->
-        <div class="about__content reveal reveal-delay-2">
-          <span class="label">About Me</span>
-          <h2 class="h2" style="margin-top:20px">Engineering practical AI systems from models to production.</h2>
-          <p class="body-lg" style="margin-top:28px">
-            I'm Suraj Prasad Kalauni, an M.Tech Software Engineering student at Delhi
-            Technological University and a Software Engineer Intern at Samsung Research
-            &amp; Development Institute.
-          </p>
-          <p class="body-lg">
-            My work focuses on LLM inference optimization, agentic workflows, model
-            compression, backend services, and applied ML systems that are measurable,
-            reliable, and deployable.
-          </p>
-
-          <div class="skills-grid">
-            <span class="skill-chip">Python</span>
-            <span class="skill-chip">PyTorch</span>
-            <span class="skill-chip">Transformers</span>
-            <span class="skill-chip">vLLM</span>
-            <span class="skill-chip">SGLang</span>
-            <span class="skill-chip">Next.js</span>
-            <span class="skill-chip">TypeScript</span>
-            <span class="skill-chip">Docker</span>
-            <span class="skill-chip">Kubernetes</span>
-            <span class="skill-chip">AWS</span>
-            <span class="skill-chip">Redis</span>
-            <span class="skill-chip">MongoDB</span>
-          </div>
-
-          <div class="about__cta-row">
-            <a href="#contact" class="btn-primary">Contact Me</a>
-            <a href="https://www.linkedin.com/in/your-linkedin-url" class="btn-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SKILLS
-       ============================================================ -->
-  <div class="section-divider"></div>
-
-  <section class="section" id="skills">
-    <div class="container">
-      <div style="max-width:600px" class="reveal">
-        <span class="label">Skills</span>
-        <h2 class="h2" style="margin-top:20px">Technical stack with production depth.</h2>
-        <p class="body-lg" style="color:var(--on-bg-muted);margin-top:20px">
-          Grouped by domain with visual indicators for the areas I use most in
-          ML engineering, inference optimization, and backend delivery.
+        <p class="abstract" hidden>
+          Intrusion detection models trained on one network dataset often degrade sharply on another, because each
+          dataset encodes traffic with its own feature set. This work maps heterogeneous datasets into a unified
+          network-flow representation and evaluates deep detection models in a cross-domain setting.
         </p>
       </div>
+    </article>
 
-      <div class="skills-section-grid">
-        <div class="skill-category reveal">
-          <div class="skill-category__title">Languages</div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Python</span><span>95%</span></div><div class="skill-meter__bar"><span style="--level:95%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>C++ / C</span><span>84%</span></div><div class="skill-meter__bar"><span style="--level:84%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Java / Golang</span><span>76%</span></div><div class="skill-meter__bar"><span style="--level:76%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>SQL / R</span><span>78%</span></div><div class="skill-meter__bar"><span style="--level:78%"></span></div></div>
+    <article class="pub">
+      <div class="pub-thumb" style="--c:#7a2e2e"><span>ICDAM</span><small>2026</small></div>
+      <div class="pub-body">
+        <h3>Adversarial Evasion Attacks and Defense Strategies for ML-Based Network Intrusion Detection on CICIDS2017</h3>
+        <p class="authors"><strong>Suraj Prasad Kalauni</strong>, et al.</p>
+        <p class="venue"><em>International Conference on Data Analytics &amp; Management (ICDAM)</em>, 2026</p>
+        <div class="pub-links">
+          <button class="chip abs-toggle" aria-expanded="false">Abstract</button>
+          <span class="badge">Presented · ICDAM 2026</span>
         </div>
-        <div class="skill-category reveal reveal-delay-1">
-          <div class="skill-category__title">ML / AI</div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>PyTorch / TensorFlow</span><span>90%</span></div><div class="skill-meter__bar"><span style="--level:90%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Hugging Face / LangChain</span><span>88%</span></div><div class="skill-meter__bar"><span style="--level:88%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>vLLM / SGLang / BitsAndBytes</span><span>84%</span></div><div class="skill-meter__bar"><span style="--level:84%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>ONNX / Scikit-learn</span><span>82%</span></div><div class="skill-meter__bar"><span style="--level:82%"></span></div></div>
-        </div>
-        <div class="skill-category reveal">
-          <div class="skill-category__title">Inference & Optimization</div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Speculative Decoding</span><span>88%</span></div><div class="skill-meter__bar"><span style="--level:88%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>INT8 / FP16 Quantization</span><span>86%</span></div><div class="skill-meter__bar"><span style="--level:86%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Structured Pruning / KV-Cache</span><span>82%</span></div><div class="skill-meter__bar"><span style="--level:82%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>RAG / Prompt Engineering</span><span>84%</span></div><div class="skill-meter__bar"><span style="--level:84%"></span></div></div>
-        </div>
-        <div class="skill-category reveal reveal-delay-1">
-          <div class="skill-category__title">Web, Backend & Systems</div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Node.js / Express / REST APIs</span><span>88%</span></div><div class="skill-meter__bar"><span style="--level:88%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Next.js / React / TypeScript</span><span>86%</span></div><div class="skill-meter__bar"><span style="--level:86%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>MongoDB / Redis / WebSockets</span><span>84%</span></div><div class="skill-meter__bar"><span style="--level:84%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Docker / Kubernetes / AWS / CI-CD</span><span>82%</span></div><div class="skill-meter__bar"><span style="--level:82%"></span></div></div>
-        </div>
-        <div class="skill-category reveal">
-          <div class="skill-category__title">CS Fundamentals</div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>DSA / OOP</span><span>88%</span></div><div class="skill-meter__bar"><span style="--level:88%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>DBMS / Operating Systems</span><span>84%</span></div><div class="skill-meter__bar"><span style="--level:84%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>System Design</span><span>80%</span></div><div class="skill-meter__bar"><span style="--level:80%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Computer Networks</span><span>82%</span></div><div class="skill-meter__bar"><span style="--level:82%"></span></div></div>
-        </div>
-        <div class="skill-category reveal reveal-delay-1">
-          <div class="skill-category__title">Target Roles</div>
-          <div class="skills-grid" style="margin-top:0">
-            <span class="skill-chip">ML Engineer</span><span class="skill-chip">AI Engineer</span>
-            <span class="skill-chip">Gen AI Developer</span><span class="skill-chip">Applied Scientist</span>
-            <span class="skill-chip">Data Scientist</span><span class="skill-chip">Backend Engineer</span>
-            <span class="skill-chip">SDE</span><span class="skill-chip">Data Analyst</span>
-            <span class="skill-chip">Software Engineer</span>
-          </div>
-        </div>
+        <p class="abstract" hidden>
+          ML-based intrusion detectors reach high accuracy on benchmark traffic, but an attacker can perturb flow
+          features to slip past them. This paper studies adversarial evasion attacks against detectors trained on
+          CICIDS2017 and evaluates defense strategies against them.
+        </p>
       </div>
+    </article>
+
+    <article class="pub">
+      <div class="pub-thumb" style="--c:#2f5d50"><span>AIP</span><small>2025</small></div>
+      <div class="pub-body">
+        <h3>Retinal Fundus Image and Deep Learning: A Novel Approach for Cardiovascular Risk Prediction</h3>
+        <p class="authors"><strong>Suraj Prasad Kalauni</strong>, et al.</p>
+        <p class="venue"><em>AIP Conference Proceedings</em>, 2025</p>
+        <div class="pub-links">
+          <button class="chip abs-toggle" aria-expanded="false">Abstract</button>
+          <a class="chip" href="https://doi.org/10.1063/5.0247009" target="_blank" rel="noopener">DOI</a>
+        </div>
+        <p class="abstract" hidden>
+          The retina offers a non-invasive view of the body's microvasculature. This work introduces a deep learning
+          approach that predicts cardiovascular risk directly from retinal fundus images, reaching 79.41% accuracy
+          in classifying cardiovascular risk.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <article class="proj">
+        <div class="proj-head"><h3>Speculative Decoding for LLM Inference</h3><span class="year">2025</span></div>
+        <p>From-scratch PyTorch implementation of draft–verify decoding (GPT-2 draft, GPT-2 XL target), reproducing the
+          acceptance/rejection scheme of Leviathan et al. Five controlled experiments across model pairs (incl. Qwen and Llama),
+          draft length <em>K</em>, temperature, adaptive <em>K</em>, and KV-cache strategies.</p>
+        <p class="metric"><strong>2.1×</strong> end-to-end throughput over autoregressive decoding at equal output quality</p>
+        <div class="tags"><span>PyTorch</span><span>Transformers</span><span>KV-cache</span></div>
+        <a class="chip" href="https://github.com/surajprasad32/speculative-decoding" target="_blank" rel="noopener">Code</a>
+      </article>
+
+      <article class="proj">
+        <div class="proj-head"><h3>LLM Benchmarking &amp; Quantization Pipeline</h3><span class="year">2025</span></div>
+        <p>Benchmarking harness for open LLMs (LLaMA 3.2-1B, Mistral-7B) measuring tokens/s, per-token latency, peak memory, and batch
+          throughput; INT8 post-training quantization with BitsAndBytes and ONNX export across FP32/FP16/INT8.</p>
+        <p class="metric"><strong>38%</strong> less GPU memory with &lt;1.2% perplexity increase on WikiText-2</p>
+        <div class="tags"><span>BitsAndBytes</span><span>ONNX</span><span>vLLM</span></div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-head"><h3>Transformer Pruning &amp; Compression</h3><span class="year">2024</span></div>
+        <p>Structured, magnitude-based attention-head pruning of DistilBERT at 10/20/30% sparsity on SST-2, benchmarked against a
+          knowledge-distillation baseline, with head-importance analysis guiding threshold selection.</p>
+        <p class="metric"><strong>27%</strong> lower latency at 20% sparsity for a 0.8% accuracy drop</p>
+        <div class="tags"><span>Pruning</span><span>Distillation</span><span>DistilBERT</span></div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-head"><h3>Blog CMS REST API</h3><span class="year">2026</span></div>
+        <p>Production-style content management API with JWT authentication, role-based access control, PostgreSQL persistence,
+          and a fully containerized deployment.</p>
+        <div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span></div>
+        <a class="chip" href="https://github.com/surajprasad32/blog-cms-api" target="_blank" rel="noopener">Code</a>
+      </article>
     </div>
   </section>
 
+  <!-- ============ NEWS ============ -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="timeline news" id="news-list">
+      <li><time>Oct 2026</time><span>Joined <strong>Samsung R&amp;D Institute India</strong>, Bangalore, as a Senior Software Engineer.</span></li>
+      <li><time>2026</time><span>Presented two papers at <strong>ICDAM 2026</strong> — cross-domain intrusion detection and adversarial evasion attacks on NIDS.</span></li>
+      <li><time>Aug 2026</time><span>Completed my M.Tech in Software Engineering at <strong>DTU</strong>.</span></li>
+      <li><time>Jan 2026</time><span>Wrapped up my internship at Samsung SRIB with a <strong>Pre-Placement Offer</strong>.</span></li>
+      <li class="extra"><time>Jul 2025</time><span>Joined Samsung SRIB as a Software Engineer Intern, working on LLM-powered agentic developer tooling.</span></li>
+      <li class="extra"><time>2025</time><span>Paper on cardiovascular risk prediction from retinal fundus images published in <strong>AIP Conference Proceedings</strong>.</span></li>
+      <li class="extra"><time>Aug 2024</time><span>Started the M.Tech program at Delhi Technological University.</span></li>
+      <li class="extra"><time>2024</time><span>Qualified <strong>GATE CSE 2024</strong> (AIR 5,943 of 1,23,967) and <strong>GATE DA 2024</strong> (AIR 5,973 of 39,210).</span></li>
+    </ul>
+    <button class="chip" id="news-more" aria-expanded="false">Show all news ↓</button>
+  </section>
 
-  <!-- ============================================================
-       TESTIMONIAL
-       ============================================================ -->
-  <div class="section-divider"></div>
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <h2>Experience &amp; Education</h2>
+    <ul class="timeline">
+      <li><time>2026 – now</time><span><strong>Senior Software Engineer</strong>, Samsung R&amp;D Institute India · Bangalore</span></li>
+      <li><time>2025 – 26</time><span><strong>Software Engineer Intern</strong>, Samsung R&amp;D Institute India · LLM agentic workflows, inference latency −15%, containerized services on Kubernetes/AWS</span></li>
+      <li><time>2024 – 26</time><span><strong>M.Tech, Software Engineering</strong>, Delhi Technological University · GPA 8.33 · Thesis: ML-based network intrusion detection (advisor: Prof. Ruchika Malhotra)</span></li>
+      <li><time>2020 – 24</time><span><strong>B.Tech, Computer Science &amp; Engineering</strong>, Dr. A.P.J. Abdul Kalam Technical University · GPA 8.12</span></li>
+    </ul>
+  </section>
 
-  <section class="section" id="experience">
-    <div class="container">
-      <div style="max-width:720px" class="reveal">
-        <span class="label">Experience</span>
-        <h2 class="h2" style="margin-top:20px">Samsung SRIB internship and measurable AI outcomes.</h2>
-      </div>
+  <!-- ============ HONORS ============ -->
+  <section id="honors">
+    <h2>Honors</h2>
+    <ul class="honors">
+      <li><strong>Pre-Placement Offer</strong>, Samsung R&amp;D Institute India <span class="muted">2026</span></li>
+      <li><strong>GATE CSE 2024</strong> — AIR 5,943 of 1,23,967 (top 5%) <span class="muted">2024</span></li>
+      <li><strong>GATE DA 2024</strong> — AIR 5,973 of 39,210 <span class="muted">2024</span></li>
+      <li><strong>GATE CSE 2023</strong> — Qualified <span class="muted">2023</span></li>
+    </ul>
+  </section>
 
-      <div class="metrics-grid reveal reveal-delay-1" id="metrics">
-        <div class="metric-card">
-          <div class="metric-card__value"><span class="counter" data-target="2.1" data-decimals="1">0</span>x</div>
-          <div class="metric-card__label">Speculative decoding speedup</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-card__value"><span class="counter" data-target="38">0</span>%</div>
-          <div class="metric-card__label">GPU memory reduction</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-card__value"><span class="counter" data-target="15">0</span>%</div>
-          <div class="metric-card__label">Inference latency improvement</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-card__value"><span class="counter" data-target="27">0</span>%</div>
-          <div class="metric-card__label">Pruning speedup</div>
-        </div>
-      </div>
-
-      <div class="timeline-grid">
-        <div class="timeline-card reveal">
-          <div class="timeline-card__meta">July 2025 - January 2026</div>
-          <h3 class="timeline-card__title">Samsung Research &amp; Development Institute — Software Engineer Intern</h3>
-          <ul class="timeline-list">
-            <li>Engineered LLM-powered agentic workflows integrated into internal developer tools with prompt chaining and tool-use patterns.</li>
-            <li>Optimized transformer inference pipelines with batching, prompt compression, and caching, reducing average latency by 15%.</li>
-            <li>Built and containerized full-stack services using Next.js, TypeScript, Docker, Kubernetes, and AWS with 99.9% uptime.</li>
-            <li>Collaborated with ML and platform teams to validate model outputs, debug inference failures, and tune generation parameters.</li>
-            <li>Developed anomaly detection in network logs using NLP and ML, improving debugging efficiency by 20%.</li>
-            <li>Designed a high-performance data pipeline to analyze network traffic patterns.</li>
-          </ul>
-        </div>
-        <div class="achievement-card reveal reveal-delay-1">
-          <span class="label">Achievements</span>
-          <p>GATE CSE 2024: Score 490/1000, Rank 5943/123967.</p>
-          <p>GATE DA 2024: Score 362/1000, Rank 5973/39210.</p>
-          <p>GATE CSE 2023: Qualified.</p>
-          <p>Pre-Placement Offer from Samsung SRIB.</p>
-          <p>State Division Basketball Player and National Level Yoga Player with 50+ competitions and 15+ medals.</p>
-          <p>Completed Dr. Angela Yu's 66+ hour Complete Web Development Bootcamp.</p>
-        </div>
-      </div>
+  <!-- ============ MISC ============ -->
+  <section id="misc">
+    <h2>Beyond work</h2>
+    <div class="misc-grid">
+      <div><h3>Competitive programming</h3><p>Regular on Codeforces and LeetCode, with 200+ problems solved — mostly graphs, DP, and whatever the Assiut sheets throw at me.</p></div>
+      <div><h3>Sports</h3><p>State-division basketball, national-level yoga, and 15+ medals along the way.</p></div>
+      <div><h3>Reproducibility</h3><p>I like experiments that give the same number twice: seeded pipelines, locked environments, and READMEs that actually run.</p></div>
     </div>
   </section>
 
-  <div class="section-divider"></div>
+</main>
 
-  <section class="section" id="education">
-    <div class="container">
-      <div style="max-width:640px" class="reveal">
-        <span class="label">Education</span>
-        <h2 class="h2" style="margin-top:20px">Formal training in software engineering and computer science.</h2>
-      </div>
-      <div class="education-grid">
-        <div class="education-card reveal">
-          <div class="education-card__meta">Aug 2024 - Aug 2026</div>
-          <h3 class="education-card__title">Delhi Technological University</h3>
-          <p class="body-lg" style="color:var(--on-bg-muted)">M.Tech Software Engineering — GPA 8.33</p>
-        </div>
-        <div class="education-card reveal reveal-delay-1">
-          <div class="education-card__meta">Jun 2020 - Mar 2024</div>
-          <h3 class="education-card__title">Dr. A.P.J Abdul Kalam Technological University</h3>
-          <p class="body-lg" style="color:var(--on-bg-muted)">B.Tech Computer Science Engineering — GPA 8.12</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<footer class="footer">
+  <div class="container">© <span id="year">2026</span> Suraj Prasad Kalauni · Last updated October 2026</div>
+</footer>
 
-  <div class="section-divider"></div>
-
-  <section class="section" id="publications">
-    <div class="container">
-      <div style="max-width:700px" class="reveal">
-        <span class="label">Publications</span>
-        <h2 class="h2" style="margin-top:20px">Published applied deep learning research.</h2>
-      </div>
-      <div class="publication-grid">
-        <div class="publication-card reveal">
-          <h3 class="publication-card__title">Retinal Fundus Image and Deep Learning: A Novel Approach for Cardiovascular Risk Prediction</h3>
-          <p class="publication-card__text">AIP Conference Proceedings, 2025. Deep learning method for cardiovascular risk prediction from retinal fundus images.</p>
-          <p class="publication-card__text"><a class="inline-link" href="https://doi.org/10.1063/5.0247009" target="_blank" rel="noopener noreferrer">DOI: 10.1063/5.0247009</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       CONTACT
-       ============================================================ -->
-  <div class="section-divider"></div>
-
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="contact__inner">
-
-        <!-- Left -->
-        <div class="contact__left reveal">
-          <span class="label">Get In Touch</span>
-          <h2 class="h2" style="margin-top:20px">Let's build practical AI systems together.</h2>
-          <p class="body-lg">
-            Reach out for ML engineering, LLM inference, Gen AI, backend systems,
-            data science, or software engineering opportunities.
-          </p>
-
-          <div style="margin-top:48px">
-            <div class="contact__info-item">
-              <div class="contact__info-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M16 3H2L9 10.5L16 3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                  <path d="M2 3v12h14V3" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <div class="contact__info-label">Email</div>
-                <div class="contact__info-value"><a href="mailto:spkalauni7789@gmail.com">spkalauni7789@gmail.com</a></div>
-              </div>
-            </div>
-            <div class="contact__info-item">
-              <div class="contact__info-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M9 1C6.24 1 4 3.24 4 6c0 4.5 5 11 5 11s5-6.5 5-11c0-2.76-2.24-5-5-5Z" stroke="currentColor" stroke-width="1.4"/>
-                  <circle cx="9" cy="6" r="1.5" stroke="currentColor" stroke-width="1.4"/>
-                </svg>
-              </div>
-              <div>
-                <div class="contact__info-label">Mobile</div>
-                <div class="contact__info-value"><a href="tel:+918267081462">+91 8267081462</a></div>
-              </div>
-            </div>
-            <div class="contact__info-item">
-              <div class="contact__info-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <circle cx="9" cy="9" r="7.5" stroke="currentColor" stroke-width="1.4"/>
-                  <path d="M9 5v4l2.5 2.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div>
-                <div class="contact__info-label">Profiles</div>
-                <div class="contact__info-value">
-                  <a class="inline-link" href="https://www.linkedin.com/in/your-linkedin-url" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                  &nbsp;/&nbsp;
-                  <a class="inline-link" href="https://github.com/your-github-url" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Form -->
-        <div class="reveal reveal-delay-2">
-          <form class="contact__form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="subject">Subject</label>
-              <input class="form-input" type="text" id="subject" name="subject" placeholder="e.g. ML Engineer opportunity" required />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="message">Message</label>
-              <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about the role, project, or collaboration..." required></textarea>
-            </div>
-            <button type="submit" class="form-submit">Send Message</button>
-            <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <a href="#hero" class="footer__logo">Suraj<span>.</span></a>
-
-      <p class="footer__copy">© 2026 Suraj Prasad Kalauni. ML/AI Engineer portfolio.</p>
-
-      <div class="footer__socials">
-        <!-- Email -->
-        <a href="mailto:spkalauni7789@gmail.com" class="social-link" aria-label="Email">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M2 4h12v8H2V4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
-            <path d="M2 4l6 5 6-5" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
-          </svg>
-        </a>
-        <!-- GitHub -->
-        <a href="https://github.com/your-github-url" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34C3.73 14.37 3.26 13 3.26 13c-.36-.93-.88-1.18-.88-1.18-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.86.86 2.31.66.07-.51.28-.86.51-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.66 7.66 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" fill="currentColor"/>
-          </svg>
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/your-linkedin-url" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M0 1.15C0 .51.53 0 1.18 0h13.64C15.47 0 16 .51 16 1.15v13.7c0 .63-.53 1.15-1.18 1.15H1.18C.53 16 0 15.48 0 14.85V1.15ZM4.8 13.4V6.17H2.4v7.23h2.4ZM3.6 5.13a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8ZM13.6 13.4V9.44c0-2.1-.45-3.72-2.91-3.72-1.18 0-1.97.65-2.3 1.26h-.03V5.87H6.07V13.4h2.4v-3.54c0-1.02.19-2 1.46-2 1.25 0 1.27 1.16 1.27 2.06v3.49h2.4Z" fill="currentColor"/>
-          </svg>
-        </a>
-        <!-- Publication -->
-        <a href="https://doi.org/10.1063/5.0247009" class="social-link" aria-label="Publication DOI" target="_blank" rel="noopener noreferrer">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <circle cx="8" cy="8" r="7.5" stroke="currentColor" stroke-width="1.2"/>
-            <path d="M1 8c2 1 4.5 1.5 7 1.3M10 1.5c-2 3-3 6-2.5 10M5 1.5C6.5 4 9.5 5 13 5.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- ============================================================
-       JAVASCRIPT
-       ============================================================ -->
-  <script src="main.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
