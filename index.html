@@ -66,8 +66,8 @@
       </h1>
 
       <p class="body-lg hero__desc reveal reveal-delay-2">
-        I build and optimize ML systems, LLM inference pipelines, agentic workflows,
-        and production-grade backend services for applied AI products.
+        I build and optimize ML systems, LLM inference pipelines, and fault-tolerant
+        cloud and backend services across AWS, Azure, Docker, and Kubernetes.
       </p>
 
       <div class="hero__actions reveal reveal-delay-3">
@@ -121,11 +121,11 @@
           <span class="label">Selected Projects</span>
           <h2 class="h2" style="margin-top:16px">Applied AI, systems, and research work.</h2>
           <p class="body-lg work__header-desc">
-            Projects across LLM acceleration, quantization, pruning, backend systems,
-            medical AI research, security, and embedded IoT.
+            Projects across LLM acceleration, quantization, pruning, cloud and distributed
+            systems, backend services, medical AI research, security, and embedded IoT.
           </p>
         </div>
-        <a href="https://github.com/your-github-url" class="work__view-all" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/surajprasad32" class="work__view-all" target="_blank" rel="noopener noreferrer">
           GitHub
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -137,6 +137,7 @@
       <div class="work__filters reveal">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="llm-ai">LLM/AI</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
         <button class="filter-btn" data-filter="backend">Backend</button>
         <button class="filter-btn" data-filter="full-stack">Full Stack</button>
         <button class="filter-btn" data-filter="research">Research</button>
@@ -260,6 +261,76 @@
           </div>
         </article>
 
+        <!-- Cloud project — Third -->
+        <article class="project-card project-card--third reveal" data-category="cloud backend">
+          <div class="project-card__media">
+            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #10202a 0%, #08141a 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="10" width="32" height="8" rx="2" stroke="rgba(165,208,185,0.3)" stroke-width="1.5"/>
+                <rect x="8" y="22" width="32" height="8" rx="2" fill="rgba(165,208,185,0.15)"/>
+                <path d="M14 38h20M24 30v8" stroke="rgba(165,208,185,0.25)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span class="tag">Python</span><span class="tag">AWS</span><span class="tag">Docker</span></div>
+            <h3 class="project-card__title">Fault-Tolerant Cloud Task Processing Service</h3>
+            <p class="project-card__desc">Cloud-native REST platform running 1,000+ asynchronous tasks, with durable task state and automatic retries so interrupted jobs resume, reaching a 99% completion rate.</p>
+            <div class="project-card__footer">
+              <span class="project-card__year">Cloud</span>
+              <span class="project-card__arrow">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cloud project — Third -->
+        <article class="project-card project-card--third reveal reveal-delay-1" data-category="llm-ai cloud backend">
+          <div class="project-card__media">
+            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #1a1830 0%, #0e0d1e 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="10" width="24" height="16" rx="4" stroke="rgba(165,208,185,0.3)" stroke-width="1.5"/>
+                <rect x="18" y="24" width="22" height="14" rx="4" fill="rgba(165,208,185,0.15)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Azure AI Search</span></div>
+            <h3 class="project-card__title">Enterprise Support Agent on Azure</h3>
+            <p class="project-card__desc">Retrieval-augmented LLM agent with LangChain and Azure AI Search that grounds answers in enterprise documents, automates tickets, and ships through CI/CD on a Spring Boot backend.</p>
+            <div class="project-card__footer">
+              <span class="project-card__year">Cloud · LLM</span>
+              <span class="project-card__arrow">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cloud project — Third -->
+        <article class="project-card project-card--third reveal reveal-delay-2" data-category="cloud backend research">
+          <div class="project-card__media">
+            <div class="project-card__media-placeholder" style="background: linear-gradient(135deg, #102218 0%, #08160e 100%);">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M6 32l8-6 7 5 9-12 6 6 6-9" stroke="rgba(165,208,185,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="30" cy="19" r="3" fill="rgba(165,208,185,0.3)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags"><span class="tag">Spark Streaming</span><span class="tag">AWS EMR</span><span class="tag">TensorFlow</span></div>
+            <h3 class="project-card__title">Log Analysis &amp; Anomaly Detection System</h3>
+            <p class="project-card__desc">Real-time Spark Streaming ingestion on AWS EMR processing 10M+ log entries daily under 3 s latency; an LSTM model flags unusual network patterns with 28% fewer false positives.</p>
+            <div class="project-card__footer">
+              <span class="project-card__year">Distributed</span>
+              <span class="project-card__arrow">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
         <!-- Project 5 — Third -->
         <article class="project-card project-card--third reveal" data-category="backend">
           <div class="project-card__media">
@@ -374,13 +445,14 @@
           <span class="label">About Me</span>
           <h2 class="h2" style="margin-top:20px">Engineering practical AI systems from models to production.</h2>
           <p class="body-lg" style="margin-top:28px">
-            I'm Suraj Prasad Kalauni, an M.Tech Software Engineering student at Delhi
-            Technological University and a Software Engineer Intern at Samsung Research
-            &amp; Development Institute.
+            I'm Suraj Prasad Kalauni, an M.Tech Software Engineering graduate of Delhi
+            Technological University, where my thesis covered machine learning-based network
+            intrusion detection. As a Software Engineer Intern at Samsung Research
+            &amp; Development, I earned a Pre-Placement Offer as a Senior Software Engineer.
           </p>
           <p class="body-lg">
-            My work focuses on LLM inference optimization, agentic workflows, model
-            compression, backend services, and applied ML systems that are measurable,
+            My work spans LLM inference optimization, cloud and distributed systems,
+            backend services, and security, building systems that are measurable,
             reliable, and deployable.
           </p>
 
@@ -390,8 +462,8 @@
             <span class="skill-chip">Transformers</span>
             <span class="skill-chip">vLLM</span>
             <span class="skill-chip">SGLang</span>
-            <span class="skill-chip">Next.js</span>
-            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">Go</span>
+            <span class="skill-chip">Java</span>
             <span class="skill-chip">Docker</span>
             <span class="skill-chip">Kubernetes</span>
             <span class="skill-chip">AWS</span>
@@ -401,7 +473,7 @@
 
           <div class="about__cta-row">
             <a href="#contact" class="btn-primary">Contact Me</a>
-            <a href="https://www.linkedin.com/in/your-linkedin-url" class="btn-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/surajprasaddtu" class="btn-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
 
@@ -431,7 +503,7 @@
           <div class="skill-category__title">Languages</div>
           <div class="skill-meter"><div class="skill-meter__top"><span>Python</span><span>95%</span></div><div class="skill-meter__bar"><span style="--level:95%"></span></div></div>
           <div class="skill-meter"><div class="skill-meter__top"><span>C++ / C</span><span>84%</span></div><div class="skill-meter__bar"><span style="--level:84%"></span></div></div>
-          <div class="skill-meter"><div class="skill-meter__top"><span>Java / Golang</span><span>76%</span></div><div class="skill-meter__bar"><span style="--level:76%"></span></div></div>
+          <div class="skill-meter"><div class="skill-meter__top"><span>Go / Java</span><span>76%</span></div><div class="skill-meter__bar"><span style="--level:76%"></span></div></div>
           <div class="skill-meter"><div class="skill-meter__top"><span>SQL / R</span><span>78%</span></div><div class="skill-meter__bar"><span style="--level:78%"></span></div></div>
         </div>
         <div class="skill-category reveal reveal-delay-1">
@@ -463,6 +535,26 @@
           <div class="skill-meter"><div class="skill-meter__top"><span>Computer Networks</span><span>82%</span></div><div class="skill-meter__bar"><span style="--level:82%"></span></div></div>
         </div>
         <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category__title">Cloud &amp; Distributed Systems</div>
+          <div class="skills-grid" style="margin-top:16px">
+            <span class="skill-chip">AWS (EC2, S3, Lambda, RDS, EMR)</span><span class="skill-chip">Azure AI Search</span>
+            <span class="skill-chip">Docker</span><span class="skill-chip">Kubernetes</span>
+            <span class="skill-chip">Microservices</span><span class="skill-chip">Fault Tolerance</span>
+            <span class="skill-chip">Apache Spark</span><span class="skill-chip">Data Pipelines</span>
+            <span class="skill-chip">Spring Boot</span><span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">PostgreSQL</span><span class="skill-chip">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category__title">Security</div>
+          <div class="skills-grid" style="margin-top:16px">
+            <span class="skill-chip">Data Protection</span><span class="skill-chip">Encryption</span>
+            <span class="skill-chip">Digital Signatures</span><span class="skill-chip">JWT</span>
+            <span class="skill-chip">Multi-Factor Authentication</span><span class="skill-chip">RBAC</span>
+            <span class="skill-chip">Intrusion &amp; Anomaly Detection</span>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal-delay-1">
           <div class="skill-category__title">Target Roles</div>
           <div class="skills-grid" style="margin-top:0">
             <span class="skill-chip">ML Engineer</span><span class="skill-chip">AI Engineer</span>
@@ -486,7 +578,7 @@
     <div class="container">
       <div style="max-width:720px" class="reveal">
         <span class="label">Experience</span>
-        <h2 class="h2" style="margin-top:20px">Samsung SRIB internship and measurable AI outcomes.</h2>
+        <h2 class="h2" style="margin-top:20px">Samsung SRIB internship and measurable engineering outcomes.</h2>
       </div>
 
       <div class="metrics-grid reveal reveal-delay-1" id="metrics">
@@ -500,7 +592,7 @@
         </div>
         <div class="metric-card">
           <div class="metric-card__value"><span class="counter" data-target="15">0</span>%</div>
-          <div class="metric-card__label">Inference latency improvement</div>
+          <div class="metric-card__label">System latency reduction</div>
         </div>
         <div class="metric-card">
           <div class="metric-card__value"><span class="counter" data-target="27">0</span>%</div>
@@ -513,18 +605,17 @@
           <div class="timeline-card__meta">July 2025 - January 2026</div>
           <h3 class="timeline-card__title">Samsung Research &amp; Development Institute — Software Engineer Intern</h3>
           <ul class="timeline-list">
-            <li>Engineered LLM-powered agentic workflows integrated into internal developer tools with prompt chaining and tool-use patterns.</li>
-            <li>Optimized transformer inference pipelines with batching, prompt compression, and caching, reducing average latency by 15%.</li>
-            <li>Built and containerized full-stack services using Next.js, TypeScript, Docker, Kubernetes, and AWS with 99.9% uptime.</li>
-            <li>Collaborated with ML and platform teams to validate model outputs, debug inference failures, and tune generation parameters.</li>
-            <li>Developed anomaly detection in network logs using NLP and ML, improving debugging efficiency by 20%.</li>
-            <li>Designed a high-performance data pipeline to analyze network traffic patterns.</li>
+            <li>Architected scalable AWS pipelines (EC2, S3, Lambda) for multi-terabyte network datasets; containerized services with Docker and Kubernetes, sustaining 99.9% uptime.</li>
+            <li>Developed Python backend services for large-scale log analysis, improving root-cause identification by 20% and reducing latency by 15%.</li>
+            <li>Automated 3+ data workflows and refactored legacy programs, eliminating recurring manual effort.</li>
+            <li>Owned features across the SDLC, from requirements and sprint estimation through design, testing, and REST API release, using code reviews and CI.</li>
+            <li>Designed and deployed a critical microservice, reducing system latency by 15% and securing a Pre-Placement Offer for a Senior Software Engineer.</li>
           </ul>
         </div>
         <div class="achievement-card reveal reveal-delay-1">
           <span class="label">Achievements</span>
-          <p>GATE CSE 2024: Score 490/1000, Rank 5943/123967.</p>
-          <p>GATE DA 2024: Score 362/1000, Rank 5973/39210.</p>
+          <p>GATE CSE 2024: Marks 40.48, Score 490/1000, Rank 5943/123967 (<a class="inline-link" href="https://drive.google.com/file/d/119HcGj2dlvhP-H1cSROeO51gGnfPOQP5/view?usp=sharing" target="_blank" rel="noopener noreferrer">scorecard</a>).</p>
+          <p>GATE DA 2024: Marks 38, Score 362/1000, Rank 5973/39210 (<a class="inline-link" href="https://drive.google.com/file/d/1G_rEs7Rse5fOASrs1HE2DaDU_To_P00e/view?usp=sharing" target="_blank" rel="noopener noreferrer">scorecard</a>).</p>
           <p>GATE CSE 2023: Qualified.</p>
           <p>Pre-Placement Offer from Samsung SRIB.</p>
           <p>State Division Basketball Player and National Level Yoga Player with 50+ competitions and 15+ medals.</p>
@@ -546,7 +637,8 @@
         <div class="education-card reveal">
           <div class="education-card__meta">Aug 2024 - Aug 2026</div>
           <h3 class="education-card__title">Delhi Technological University</h3>
-          <p class="body-lg" style="color:var(--on-bg-muted)">M.Tech Software Engineering — GPA 8.33</p>
+          <p class="body-lg" style="color:var(--on-bg-muted)">M.Tech Software Engineering — GPA 8.55</p>
+          <p class="body-lg" style="color:var(--on-bg-muted)">Thesis: Machine Learning-Based Network Intrusion Detection Systems</p>
         </div>
         <div class="education-card reveal reveal-delay-1">
           <div class="education-card__meta">Jun 2020 - Mar 2024</div>
@@ -563,12 +655,17 @@
     <div class="container">
       <div style="max-width:700px" class="reveal">
         <span class="label">Publications</span>
-        <h2 class="h2" style="margin-top:20px">Published applied deep learning research.</h2>
+        <h2 class="h2" style="margin-top:20px">Published research in network security and applied deep learning.</h2>
       </div>
       <div class="publication-grid">
         <div class="publication-card reveal">
+          <h3 class="publication-card__title">Network Intrusion Detection for Vulnerable Networks Using CICIDS2017: Preprocessing, SMOTE Balancing, and Comparative Evaluation of Random Forest, XGBoost and Neural Network</h3>
+          <p class="publication-card__text">Lecture Notes in Networks and Systems, ICICC 2026, Springer Nature, 2026. Comparative evaluation of ML intrusion detectors on CICIDS2017 with SMOTE class balancing.</p>
+          <p class="publication-card__text"><a class="inline-link" href="https://doi.org/10.1007/978-3-032-28594-2_18" target="_blank" rel="noopener noreferrer">DOI: 10.1007/978-3-032-28594-2_18</a></p>
+        </div>
+        <div class="publication-card reveal reveal-delay-1">
           <h3 class="publication-card__title">Retinal Fundus Image and Deep Learning: A Novel Approach for Cardiovascular Risk Prediction</h3>
-          <p class="publication-card__text">AIP Conference Proceedings, 2025. Deep learning method for cardiovascular risk prediction from retinal fundus images.</p>
+          <p class="publication-card__text">AIP Conference Proceedings, 2025. Deep learning method for cardiovascular risk prediction from retinal fundus images, achieving 79.41% accuracy.</p>
           <p class="publication-card__text"><a class="inline-link" href="https://doi.org/10.1063/5.0247009" target="_blank" rel="noopener noreferrer">DOI: 10.1063/5.0247009</a></p>
         </div>
       </div>
@@ -590,7 +687,7 @@
           <span class="label">Get In Touch</span>
           <h2 class="h2" style="margin-top:20px">Let's build practical AI systems together.</h2>
           <p class="body-lg">
-            Reach out for ML engineering, LLM inference, Gen AI, backend systems,
+            Reach out for ML engineering, LLM inference, Gen AI, cloud and backend systems,
             data science, or software engineering opportunities.
           </p>
 
@@ -629,9 +726,9 @@
               <div>
                 <div class="contact__info-label">Profiles</div>
                 <div class="contact__info-value">
-                  <a class="inline-link" href="https://www.linkedin.com/in/your-linkedin-url" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a class="inline-link" href="https://www.linkedin.com/in/surajprasaddtu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                   &nbsp;/&nbsp;
-                  <a class="inline-link" href="https://github.com/your-github-url" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a class="inline-link" href="https://github.com/surajprasad32" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
             </div>
@@ -687,13 +784,13 @@
           </svg>
         </a>
         <!-- GitHub -->
-        <a href="https://github.com/your-github-url" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/surajprasad32" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34C3.73 14.37 3.26 13 3.26 13c-.36-.93-.88-1.18-.88-1.18-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.86.86 2.31.66.07-.51.28-.86.51-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.66 7.66 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" fill="currentColor"/>
           </svg>
         </a>
         <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/your-linkedin-url" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/surajprasaddtu" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M0 1.15C0 .51.53 0 1.18 0h13.64C15.47 0 16 .51 16 1.15v13.7c0 .63-.53 1.15-1.18 1.15H1.18C.53 16 0 15.48 0 14.85V1.15ZM4.8 13.4V6.17H2.4v7.23h2.4ZM3.6 5.13a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8ZM13.6 13.4V9.44c0-2.1-.45-3.72-2.91-3.72-1.18 0-1.97.65-2.3 1.26h-.03V5.87H6.07V13.4h2.4v-3.54c0-1.02.19-2 1.46-2 1.25 0 1.27 1.16 1.27 2.06v3.49h2.4Z" fill="currentColor"/>
           </svg>
